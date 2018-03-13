@@ -13,4 +13,29 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/Example');
+import React, { Component } from 'react';
+
+import ReactDOM from 'react-dom';
+
+import Heart from './components/Heart';
+
+import Clock from './components/Clock';
+
+export default class App extends Component {
+
+    render(){
+
+        return (
+            <div>
+                <Heart></Heart>
+                <Clock></Clock>
+            </div>
+        );
+
+    }
+
+}
+
+if (document.getElementById('app')) {
+    ReactDOM.render(<App />, document.getElementById('app'));
+}
