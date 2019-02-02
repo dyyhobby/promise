@@ -42,7 +42,7 @@ export default class Clock extends Component {
 
                 <div className="text-center">我们已经在一起 { Moment().diff(Moment("20180214"),'days') } 天。</div>
                 <div className="text-center">最近的你情绪总是莫名其妙的低落。 -- 2018-11-04</div>
-
+                <div className="text-center">我们订婚了。 -- 2019-02-03</div>
             </div>
         );
 
